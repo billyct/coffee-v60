@@ -1,6 +1,7 @@
 import {useAtomValue} from 'jotai'
-import {coffeeBeanAtom, durationAtom, waterAtom, waterRatioAtom} from './store'
 import {Heading, majorScale, Pane, Pulsar, Small, Position} from 'evergreen-ui'
+
+import {coffeeBeanNumberAtom, durationAtom, waterNumberAtom} from './store'
 
 const isBetween = (duration, min, max = null) => {
   let res = duration >= min
@@ -14,8 +15,8 @@ const isBetween = (duration, min, max = null) => {
 
 const BrewTimings = () => {
   const duration = useAtomValue(durationAtom)
-  const coffeeBean = useAtomValue(coffeeBeanAtom)
-  const water = useAtomValue(waterAtom)
+  const coffeeBean = useAtomValue(coffeeBeanNumberAtom)
+  const water = useAtomValue(waterNumberAtom)
 
   const timings = [
     {
