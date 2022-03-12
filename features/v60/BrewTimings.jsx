@@ -69,7 +69,7 @@ const BrewTimings = () => {
             )}
           </Heading>
           <Heading>
-            加水至 {timing.weight} g
+            加水至 {parseInt(timing.weight)} g
           </Heading>
 
           {isBetween(duration, timing.minTime, timing.maxTime) && (
