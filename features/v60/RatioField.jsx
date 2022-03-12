@@ -20,10 +20,11 @@ const RatioField = () => {
         position='relative'
       >
         <TextInput
-          paddingRight={majorScale(18)}
+          paddingRight={majorScale(11)}
           width='100%'
           value={waterRatio}
           onChange={handleChange}
+          type='number'
         />
 
         <InputHelperText>水 : 1 咖啡豆</InputHelperText>
