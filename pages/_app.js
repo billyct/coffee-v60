@@ -1,4 +1,4 @@
-import Head from 'next/Head'
+import Head from 'next/head'
 
 import './app.css'
 
@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta charSet="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>V60</title>
       </Head>
       <Component {...pageProps} />
     </>
